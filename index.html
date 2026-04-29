@@ -257,32 +257,18 @@
       text-align: center;
       box-shadow: 0px 4px 0px #585c5c, 0px 4px 0px  #585c5c;
     }
-    .popup-btn.cta {
-      background: #19c37d;
-      color: #fff;
-      border: none;
-      box-shadow: 0px 4px 0px #0A8F4D;
-    }
-    .popup-btn.cta:active,
-    .popup-btn.cta:hover {
-      background: #169b63;
-    }
     .popup-btn.outline {
       background: #b0bec5;
       color: #fff;
       border: none;
+      text-decoration: none !important;
     }
     .popup-btn.outline:active,
     .popup-btn.outline:hover {
       background: #78909c;
     }
-    .popup-btn.cta:focus,
     .popup-btn.outline:focus {
       box-shadow: 0 0 0 2px #19c37d44;
-    }
-    .popup-btn.cta,
-    .popup-btn.outline {
-      text-decoration: none !important;
     }
     /* Shimmer effect */
     .popup-btn::before {
@@ -365,7 +351,6 @@
     <div class="popup-modal">
       <div class="popup-headline">Cleared!</div>
       <div class="popup-btns">
-        <a class="popup-btn cta" href="https://start.gametize.com/" target="_blank" rel="noopener">Explore Gametize</a>
         <button class="popup-btn outline" id="restartBtn">Restart</button>
       </div>
     </div>
@@ -1042,7 +1027,6 @@
     }
     // Example: Uncomment to test popup
     // showLevelClearedPopup();
-    document.querySelectorAll('.popup-btn.cta').forEach(btn => btn.onclick = hideLevelClearedPopup);
     document.querySelectorAll('.popup-btn.outline').forEach(btn => btn.onclick = hideLevelClearedPopup);
 
     function resetGame() {
